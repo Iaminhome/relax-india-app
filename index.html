@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101010">
+<title>RELAX INDIA | Home Wellness Services</title>
+<style>
+:root{--gold:#d6ad55;--gold2:#f2d58b;--bg:#101010;--panel:#1b1b1b;--muted:#bdb7a9;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#101010ed;border-bottom:1px solid #4a3b1e;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-weight:900;letter-spacing:1.5px;color:var(--gold2);font-size:22px}.brand small{display:block;font-size:10px;letter-spacing:2px;color:#eee;font-weight:500}
+select,input,button{font:inherit;border-radius:10px;padding:11px;border:1px solid #65532d;background:#171717;color:white}
+button,.btn{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17120a;border:0;font-weight:800;cursor:pointer;text-decoration:none;display:inline-block;padding:12px 18px;border-radius:10px}
+main{max-width:1120px;margin:auto;padding:24px 18px 70px}.hero{border:1px solid #594723;border-radius:22px;padding:38px 25px;background:radial-gradient(circle at 85% 15%,#4b391b 0,#201a10 34%,#171717 70%);display:grid;grid-template-columns:1.4fr .6fr;gap:20px;align-items:center}
+h1{font-size:clamp(32px,5vw,54px);line-height:1.1;margin:8px 0 14px}.gold{color:var(--gold2)}p{color:var(--muted)}.seal{width:150px;height:150px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:auto;color:var(--gold2);font-size:54px;box-shadow:0 0 40px #d6ad5522}
+section{margin-top:34px}.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap}h2{margin:0 0 8px;font-size:26px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.card{background:var(--panel);border:1px solid #40351f;border-radius:16px;padding:18px}.card h3{margin:5px 0;color:var(--gold2)}.icon{font-size:28px}.muted{font-size:13px;color:var(--muted)}
+form{display:grid;gap:12px;max-width:650px}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.form-grid>*{width:100%}label{font-size:13px;color:var(--muted)}.field{display:grid;gap:5px}.notice{border-left:3px solid var(--gold);padding:12px 15px;background:#211d14;border-radius:8px;color:#e7dcc2;font-size:14px}
+footer{border-top:1px solid #3d321d;padding:24px 5%;color:var(--muted);text-align:center;font-size:13px}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:var(--gold2);text-decoration:none;padding:7px 9px}
+#status{display:none;padding:12px;border-radius:10px;background:#17351f;color:#baf3c7}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.seal{display:none}.form-grid{grid-template-columns:1fr}header{position:static}nav{width:100%}main{padding-top:16px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand">RELAX INDIA<small>HOME WELLNESS SERVICES</small></div>
+ <nav><a href="#services">Services</a><a href="#booking">Book</a><a href="#partner">Partner</a></nav>
+ <select id="lang" aria-label="Choose language">
+  <option value="hi">हिन्दी</option><option value="en">English</option>
+  <option>অসমীয়া</option><option>বাংলা</option><option>बोड़ो</option><option>डोगरी</option>
+  <option>ગુજરાતી</option><option>ಕನ್ನಡ</option><option>कश्मीरी</option><option>कोंकणी</option>
+  <option>मैथिली</option><option>മലയാളം</option><option>মণিপুরী</option><option>मराठी</option>
+  <option>नेपाली</option><option>ଓଡ଼ିଆ</option><option>ਪੰਜਾਬੀ</option><option>संस्कृतम्</option>
+  <option>संताली</option><option>سنڌي</option><option>தமிழ்</option><option>తెలుగు</option><option>اردو</option>
+ </select>
+</header>
+<main>
+ <div class="hero">
+  <div><div class="gold">WELCOME TO RELAX INDIA</div><h1 id="heroTitle">आराम और वेलनेस,<br><span class="gold">आपके दरवाज़े पर।</span></h1>
+  <p id="heroText">घर पर पेशेवर, सुरक्षित और गैर-यौन वेलनेस सेवाओं के लिए बुकिंग का आसान तरीका।</p>
+  <a class="btn" href="#booking" id="bookBtn">सेवा बुक करें</a></div>
+  <div class="seal">✦</div>
+ </div>
+ <section id="services">
+  <div class="section-title"><div><h2 id="serviceTitle">हमारी सेवाएँ</h2><p id="serviceSub">प्रशिक्षित और सत्यापित वयस्क सेवा प्रदाताओं के माध्यम से।</p></div></div>
+  <div class="grid">
+   <article class="card"><div class="icon">🌿</div><h3>Relaxation Wellness</h3><p class="muted">आराम और तनाव कम करने के लिए सामान्य वेलनेस सेवा।</p></article>
+   <article class="card"><div class="icon">🧘</div><h3>Head Wellness</h3><p class="muted">सिर और स्कैल्प की सामान्य वेलनेस सेवा।</p></article>
+   <article class="card"><div class="icon">🦶</div><h3>Foot Wellness</h3><p class="muted">पैरों की आरामदायक वेलनेस सेवा।</p></article>
+   <article class="card"><div class="icon">💆</div><h3>Back &amp; Shoulder</h3><p class="muted">पीठ और कंधों के लिए पेशेवर वेलनेस सेवा।</p></article>
+   <article class="card"><div class="icon">🌱</div><h3>Ayurvedic Wellness</h3><p class="muted">केवल उचित प्रशिक्षण/योग्यता वाले प्रदाताओं द्वारा।</p></article>
+   <article class="card"><div class="icon">🏃</div><h3>Sports Recovery</h3><p class="muted">खेल गतिविधि के बाद सामान्य रिकवरी वेलनेस।</p></article>
+   <article class="card"><div class="icon">🪑</div><h3>Chair Wellness</h3><p class="muted">कम समय की चेयर-बेस्ड वेलनेस सेवा।</p></article>
+  </div>
+ </section>
+ <section id="booking">
+  <h2 id="bookingTitle">बुकिंग अनुरोध</h2><p>अपनी जानकारी भरें। यह अभी डेमो फॉर्म है; लाइव बुकिंग/पेमेंट सक्रिय नहीं है।</p>
+  <form id="bookingForm">
+   <div class="form-grid">
+    <div class="field"><label>नाम</label><input required placeholder="अपना नाम"></div>
+    <div class="field"><label>मोबाइल नंबर</label><input required inputmode="numeric" pattern="[0-9]{10}" placeholder="10 अंकों का नंबर"></div>
+    <div class="field"><label>शहर</label><input required placeholder="जैसे लखनऊ"></div>
+    <div class="field"><label>सेवा चुनें</label><select required><option value="">सेवा चुनें</option><option>Relaxation Wellness</option><option>Head Wellness</option><option>Foot Wellness</option><option>Back & Shoulder</option><option>Ayurvedic Wellness</option><option>Sports Recovery</option><option>Chair Wellness</option></select></div>
+   </div>
+   <div class="field"><label>पसंदीदा तारीख और समय</label><input type="datetime-local" required></div>
+   <button type="submit">डेमो अनुरोध भेजें</button><div id="status">डेमो सफल: कोई वास्तविक बुकिंग नहीं भेजी गई है।</div>
+  </form>
+ </section>
+ <section id="partner">
+  <h2>पार्टनर / सेवा प्रदाता रजिस्ट्रेशन</h2>
+  <div class="notice">प्रस्तावित शुल्क ₹50 और सफल सेवा पर प्लेटफॉर्म कमीशन 30% है। ये अभी केवल प्रस्तावित डेमो शर्तें हैं, भुगतान या रजिस्ट्रेशन सक्रिय नहीं है। सेवा प्रदाता 18+ आयु के, प्रशिक्षित, पहचान-सत्यापित और लागू नियमों के अनुरूप होने चाहिए।</div>
+  <form id="partnerForm" style="margin-top:14px">
+   <div class="form-grid">
+    <div class="field"><label>पूरा नाम</label><input required placeholder="नाम"></div>
+    <div class="field"><label>मोबाइल नंबर</label><input required inputmode="numeric" pattern="[0-9]{10}" placeholder="10 अंकों का नंबर"></div>
+    <div class="field"><label>शहर / राज्य</label><input required placeholder="शहर, राज्य"></div>
+    <div class="field"><label>प्रशिक्षण / योग्यता</label><input required placeholder="कोर्स या अनुभव"></div>
+   </div>
+   <label><input type="checkbox" required> मैं पुष्टि करता/करती हूँ कि मेरी आयु 18 वर्ष या अधिक है।</label>
+   <button type="submit">डेमो रजिस्ट्रेशन</button>
+  </form>
+ </section>
+ <section>
+  <h2>सुरक्षा और भरोसा</h2>
+  <div class="grid">
+   <div class="card"><h3>पहचान सत्यापन</h3><p class="muted">लाइव सेवा शुरू करने से पहले प्रदाता की पहचान और पृष्ठभूमि जाँच आवश्यक होगी।</p></div>
+   <div class="card"><h3>स्पष्ट सहमति</h3><p class="muted">हर सेवा गैर-यौन, सहमति-आधारित और पेशेवर सीमाओं के भीतर होगी।</p></div>
+   <div class="card"><h3>सहायता और शिकायत</h3><p class="muted">लाइव लॉन्च से पहले ग्राहक सहायता, शिकायत, रिफंड और आपातकालीन प्रक्रिया बनानी होगी।</p></div>
+  </div>
+ </section>
+</main>
+<footer>© 2026 RELAX INDIA · Home Wellness Services – At Your Doorstep<br>यह एक फ्रंट-एंड डेमो है, वास्तविक सेवा/बुकिंग प्लेटफॉर्म नहीं।</footer>
+<script>
+const translations={
+hi:{hero:'आराम और वेलनेस,<br><span class="gold">आपके दरवाज़े पर।</span>',desc:'घर पर पेशेवर, सुरक्षित और गैर-यौन वेलनेस सेवाओं के लिए बुकिंग का आसान तरीका।',book:'सेवा बुक करें',services:'हमारी सेवाएँ',sub:'प्रशिक्षित और सत्यापित वयस्क सेवा प्रदाताओं के माध्यम से।',booking:'बुकिंग अनुरोध'},
+en:{hero:'Wellness and relaxation,<br><span class="gold">at your doorstep.</span>',desc:'A simple way to request professional, safe and non-sexual wellness services at home.',book:'Request a service',services:'Our Services',sub:'Through trained and verified adult service providers.',booking:'Booking request'}
+};
+document.getElementById('lang').addEventListener('change',e=>{
+ const t=translations[e.target.value]||translations.en;
+ document.getElementById('heroTitle').innerHTML=t.hero;
+ document.getElementById('heroText').textContent=t.desc;
+ document.getElementById('bookBtn').textContent=t.book;
+ document.getElementById('serviceTitle').textContent=t.services;
+ document.getElementById('serviceSub').textContent=t.sub;
+ document.getElementById('bookingTitle').textContent=t.booking;
+});
+['bookingForm','partnerForm'].forEach(id=>document.getElementById(id).addEventListener('submit',e=>{e.preventDefault();if(id==='bookingForm')document.getElementById('status').style.display='block';else alert('यह डेमो है। आपका डेटा कहीं भेजा या सेव नहीं हुआ।');}));
+</script>
+</body></html>
